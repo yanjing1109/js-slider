@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript 图片轮播</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="swiper2">
+		<ul id="videoFocusList" class="listImg">
+			<li class="active"><a href="#"><img src="img/video/pic994_1.jpg" /></a></li>
+			<li><a href="#"><img src="img/video/pic994_2.jpg" /></a></li>
+			<li><a href="#"><img src="img/video/pic994_3.jpg" /></a></li>
+			<li><a href="#"><img src="img/video/pic994_4.jpg" /></a></li>
+			<li><a href="#"><img src="img/video/pic994_5.jpg" /></a></li>
+			<li><a href="#"><img src="img/video/pic994_6.jpg" /></a></li>
+		</ul>
+		<i class="videoFocusBottomMask"></i>
+		<ul class="videoFocusTit" id="videoFocusTit">
+	    	<li class="active"><a href="#"><span>《太极侠》</span>黑客帝国主演基努·里维斯自导自演圆中国功夫梦</a></li>
+	        <li><a href="#"><span>《北京遇上西雅图》</span>拜金女汤唯遭遇闷骚叔吴秀波</a></li>
+	        <li><a href="#"><span>《巨人捕手杰克》</span>暗黑中世纪奇幻大作 传奇冒险故事颠覆童年</a></li>
+	        <li><a href="#"><span>《重返地球》</span>威尔·史密斯甘当绿叶捧子上位 地球末日1000年后父子重返家园寻生存之道！</a></li>
+	        <li><a href="#"><span>《毒战》</span>孙红雷、古天乐透析人心之毒 两大影帝巅峰对决</a></li>
+	        <li><a href="#"><span>《孤岛惊魂2》</span>湿身萝莉逆袭杀人狂 邓家佳“胸”猛来袭！</a></li>
+	        <li><a href="#"><span>《天台爱情》</span>周杰伦五年磨一剑 自编自导自演第二弹！</a></li>
+	        <li><a href="#"><span>《美女主播视频聊天》</span>超人气美女主播 24小时在线直播</a></li>
+	    </ul>
+		<ul class="videoFocusTab" id="videoFocusTab">
+			<li class="active">
+				<a href="javascript:void(0);" slide-to="0"><img src="img/video/pic994_1_1.jpg" /><em>太极侠</em></a>
+			</li>
+			<li>
+				<a  href="javascript:void(0);" slide-to="1"><img src="img/video/pic994_2_1.jpg" /><em>北京遇上西雅图</em></a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" slide-to="2"><img src="img/video/pic994_3_1.jpg" /><em>巨人捕手杰克</em></a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" slide-to="3"><img src="img/video/pic994_4_1.jpg" /><em>重返地球</em></a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" slide-to="4"><img src="img/video/pic994_5_1.jpg" /><em>毒战</em></a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" slide-to="5"><img src="img/video/pic994_6_1.jpg" /><em>孤岛惊魂2</em></a>
+			</li>
+		</ul>
+	</div>
+<script src="js/tabSlider2.js"></script>
+<script>
+	
+	tabSlider2.init({
+		startNum:"1",					//  默认起始位置
+		fList:"videoFocusList",				//  容器ID值
+		fTit:"videoFocusTit",
+		fTab:"videoFocusTab",				//  页码ID
+		autoPlayTime:"2000",			//  自动播放时间
+		activeClass:"active"			//  选中标签添加类
+	});
+
+</script>
+
+</body>
+</html>

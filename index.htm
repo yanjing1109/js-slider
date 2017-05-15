@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript 图片轮播</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="swiper1" class="swiper">
+		<ul id="listBox" class="swi_img">
+			<li class="active"><a href="#"><img src="images/1.jpg" /></a></li>
+			<li><a href="#"><img src="images/2.jpg" /></a></li>
+			<li><a href="#"><img src="images/3.jpg" /></a></li>
+			<li><a href="#"><img src="images/4.jpg" /></a></li>
+			<li><a href="#"><img src="images/5.jpg" /></a></li>
+		</ul>
+		<div id="listNum" class="swi_tab sliderListNum">
+			<a class="active" href="javascript:void(0);" slide-to="0">1</a>
+			<a href="javascript:void(0);" slide-to="1">2</a>
+			<a href="javascript:void(0);" slide-to="2">3</a>
+			<a href="javascript:void(0);" slide-to="3">4</a>
+			<a href="javascript:void(0);" slide-to="4">5</a>
+		</div>
+	</div>
+
+<script src="js/tabSlider.js"></script>
+<script>
+	tabSlider.init({
+		startNum:"0",				//  默认起始位置
+		listBox:"listBox",			//  容器ID值
+		listBoxTag:"li",			//  轮播图片tag标签
+		listNum:"listNum",			//  页码ID
+		listNumTag:"a",				//  页码tag标签
+		autoPlay: true,			//  是否自动播放
+		autoPlayTime:"2000",		//  自动播放时间
+		activeClass:"active"		//  选中标签添加类
+	});
+/*	tabSlider.swiperImg(3);
+	
+*/
+
+</script>
+
+</body>
+</html>

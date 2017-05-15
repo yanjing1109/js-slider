@@ -1,0 +1,157 @@
+@charset "UTF-8";
+html,body{font:12px/1.5 \5FAE\8F6F\96C5\9ED1,SimSun,Arial,Tahoma;}
+ul,ol{list-style:none;padding: 0;margin:0;}
+a{text-decoration:none;}
+img{border:0 none;}
+
+.swiper{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+.swi_img li{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+.swi_img li.active{
+	display: block;
+}
+.swi_img .img1{
+	display: block;
+}
+
+.swi_img a{
+	display: block;
+}
+
+
+.swi_img a img{
+	width: 100%;
+	height: 300px;
+}
+.swi_tab{
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	z-index: 10;
+}
+.swi_tab a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: #f60;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	opacity: 0.8;
+	margin:0;
+	padding: 0;
+}
+
+.swi_tab a:hover, .swi_tab a.active{
+	background: #f69;
+}
+
+.swiper2{
+	width: 994px;
+	height: 318px;
+	overflow: hidden;
+	margin: 30px auto;
+	position: relative;
+}
+
+.videoFocusBottomMask{
+	background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    height: 110px;
+    top: 208px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 24;
+}
+.listImg{
+	position: relative;
+	width: 994px;
+	height: 322px;
+	overflow: hidden;
+}
+.listImg li{
+	opacity: 0;
+	position: absolute;
+	left:0;
+	top: 0;
+}
+.listImg .active{
+	opacity: 1;
+}
+.videoFocusTab{
+	position: absolute;
+	top:238px; 
+	left:90px;
+	z-index: 30;
+}
+.videoFocusTab li{
+	float: left;
+	z-index: 30;
+	width: 114px;
+	height: 64px;
+	margin: 10px;
+	background: 0 none;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.videoFocusTab li a{
+	display: block;
+	position: relative;
+	border: 2px solid #686D6E;
+	opacity: 0.5;
+	background: #333;
+}
+.videoFocusTab .active a{
+	opacity: 1;
+	border:0 none;
+}
+.videoFocusTab li a em{
+	display: block;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-style: none;
+	background: rgba(45,45,45,0.5);
+	color: #fff;
+}
+.videoFocusTit{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	position: absolute;
+	top: 200px;
+	left: 90px;
+	overflow: hidden;
+	z-index: 30;
+}
+
+.videoFocusTit a{
+	font-size: 18px;
+	color: #fff;
+}
+
+.videoFocusTit li{
+	display: none;
+}
+.videoFocusTit .active{
+	display: block;
+}
